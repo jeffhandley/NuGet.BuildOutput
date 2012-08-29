@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <version>$version$</version>
+    <version>0.0.1-prototype</version>
     <authors>Jeff Handley</authors>
     <owners>jeffhandley</owners>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System" targetFramework="" />
     </frameworkAssemblies>
-    <id>NuGet.PackageDiscovery</id>
+    <id>NuGet.BuildOutput</id>
     <title />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An MSBuild task for discovering packages installed in a project, with output of the packages folders.</description>
@@ -16,7 +16,7 @@
   <files>
     <file src="install.ps1" target="tools\install.ps1" />
     <file src="bin\NuGet.Core.dll" target="tools\NuGet.Core.dll" />
-    <file src="bin\NuGet.PackageDiscovery.dll" target="tools\NuGet.PackageDiscovery.dll" />
-    <file src="NuGet.PackageDiscovery.targets" target="tools\NuGet.PackageDiscovery.targets" />
+    <file src="bin\NuGet.BuildOutput.dll" target="tools\NuGet.BuildOutput.dll" />
+    <file src="NuGet.BuildOutput.targets" target="tools\NuGet.BuildOutput.targets" />
   </files>
 </package>

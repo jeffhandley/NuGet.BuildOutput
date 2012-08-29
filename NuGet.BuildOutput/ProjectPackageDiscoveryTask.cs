@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.Build.Framework;
 
-namespace NuGet.PackageDiscovery
+namespace NuGet.BuildOutput
 {
     public class ProjectPackageDiscoveryTask : Microsoft.Build.Utilities.Task
     {
@@ -15,7 +15,10 @@ namespace NuGet.PackageDiscovery
             var packagesRepo = new SharedPackageRepository(packagesFolder);
             var projectPackages = new PackageReferenceRepository(new PhysicalFileSystem(this.MSBuildProjectDirectory), packagesRepo);
 
-            projectPackages.GetPackages().Select(p => packagesRepo.PathResolver.GetPackageDirectory(p)).ToList().ForEach(p => _packageFolders.Add(Path.Combine(packagesFolder, p)));
+            projectPackages.GetPackages()
+                .Select(p => packagesRepo.PathResolver.GetPackageDirectory(p)).ToList()
+                .ForEach(p => _packageFolders.Add(Path.Combine(packagesFolder, p)));
+
             return true;
         }
 

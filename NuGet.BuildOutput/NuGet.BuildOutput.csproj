@@ -7,8 +7,8 @@
     <ProjectGuid>{E344BE6F-4957-4A52-BE5C-2A8CDCA06A35}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NuGet.PackageDiscovery</RootNamespace>
-    <AssemblyName>NuGet.PackageDiscovery</AssemblyName>
+    <RootNamespace>NuGet.BuildOutput</RootNamespace>
+    <AssemblyName>NuGet.BuildOutput</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -48,8 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="install.ps1" />
-    <None Include="NuGet.PackageDiscovery.nuspec" />
-    <None Include="NuGet.PackageDiscovery.targets" />
+    <None Include="NuGet.BuildOutput.nuspec" />
+    <None Include="NuGet.BuildOutput.targets" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
