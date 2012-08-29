@@ -1,6 +1,12 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+# build output
 bin
 obj
+packages
+*.nupkg
 
 # mstest test results
 TestResults
+
+# user files
+*.suo
+*.csproj.user
